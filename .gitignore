@@ -1,7 +1,13 @@
 .venv/
 __pycache__/
 *.pyc
-data/
+# Data files — tracked by DVC, not Git
+data/ratings.dat
+data/movies.dat
+
+# But DO allow DVC pointer files
+!data/*.dvc
+!data/.gitignore
 models/
 .dvc/cache/
 *.pkl
