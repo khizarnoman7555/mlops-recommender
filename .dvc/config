@@ -1,4 +1,5 @@
 [core]
     remote = gdrive
 ['remote "gdrive"']
-    url = https://drive.google.com/drive/folders/18lfX4bEwQk6lPkt9U5ea6hBwRN8k6lco
+    url = gdrive://18lfX4bEwQk6lPkt9U5ea6hBwRN8k6lco
+    gdrive_acknowledge_abuse = true
