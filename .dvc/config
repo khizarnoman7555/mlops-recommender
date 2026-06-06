@@ -1,5 +1,4 @@
 [core]
-    remote = gdrive
-['remote "gdrive"']
-    url = gdrive://18lfX4bEwQk6lPkt9U5ea6hBwRN8k6lco
-    gdrive_acknowledge_abuse = true
+    remote = local
+['remote "local"']
+    url = /Users/Uzair/dvc-storage
