@@ -8,7 +8,7 @@ data/movies.dat
 # But DO allow DVC pointer files
 !data/*.dvc
 !data/.gitignore
-models/
+/models/
 .dvc/cache/
 *.pkl
 mlruns/

@@ -1,0 +1,10 @@
+{
+  "svd_rmse": 0.9327,
+  "svd_mae": 0.7355,
+  "svd_rmse_std": 0.0029,
+  "baseline_rmse": 1.5189,
+  "improvement_pct": 38.6,
+  "n_factors": 50,
+  "n_epochs": 20,
+  "cv_folds": 5
+}
