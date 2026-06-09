@@ -21,3 +21,10 @@ data/movies.dat
 
 .dvc/cache/
 mlruns/
+
+
+# Mac system files
+.DS_Store
+
+# Anaconda
+anaconda_projects/
