@@ -1,10 +1,10 @@
 {
-  "svd_rmse": 0.9327,
-  "svd_mae": 0.7355,
-  "svd_rmse_std": 0.0029,
-  "baseline_rmse": 1.5189,
-  "improvement_pct": 38.6,
-  "n_factors": 50,
-  "n_epochs": 20,
-  "cv_folds": 5
+  "best_rmse": 0.9335,
+  "best_mae": 0.7364,
+  "best_params": {
+    "n_factors": 20,
+    "lr_all": 0.005,
+    "reg_all": 0.02
+  },
+  "grid_search_runs": 12
 }
