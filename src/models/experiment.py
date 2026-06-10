@@ -1,12 +1,13 @@
+import os
 import json
 import joblib
 import pandas as pd
-import dagshub
 import mlflow
 from surprise import SVD, NormalPredictor, Dataset, Reader
 from surprise.model_selection import cross_validate, GridSearchCV
 
 # ── 1. Connect to DagsHub ──────────────────────────────────────
+import dagshub
 dagshub.init(
     repo_owner="khizarnoman7555",
     repo_name="mlops-recommender",
