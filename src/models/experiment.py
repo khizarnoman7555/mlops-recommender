@@ -6,12 +6,12 @@ import mlflow
 from surprise import SVD, NormalPredictor, Dataset, Reader
 from surprise.model_selection import cross_validate, GridSearchCV
 
-# ── 1. Connect to DagsHub ──────────────────────────────────────
-import dagshub
-dagshub.init(
-    repo_owner="khizarnoman7555",
-    repo_name="mlops-recommender",
-    mlflow=True
+# ── 1. Connect to DagsHub via env vars (no OAuth) ─────────────
+username = os.environ.get("MLFLOW_TRACKING_USERNAME", "")
+password = os.environ.get("MLFLOW_TRACKING_PASSWORD", "")
+
+mlflow.set_tracking_uri(
+    f"https://{username}:{password}@dagshub.com/khizarnoman7555/mlops-recommender.mlflow"
 )
 
 mlflow.set_experiment("svd-recommender")
