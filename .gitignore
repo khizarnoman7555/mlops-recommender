@@ -27,4 +27,4 @@ mlruns/
 .DS_Store
 
 # Anaconda
-anaconda_projects/
+anaconda_projects/streamlit/.streamlit/secrets.toml
