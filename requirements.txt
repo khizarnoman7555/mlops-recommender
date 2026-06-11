@@ -8,3 +8,4 @@ pytest
 python-dotenv
 fastapi
 uvicorn
+evidently
