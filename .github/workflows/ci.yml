@@ -43,6 +43,16 @@ jobs:
         run: |
           python src/models/train.py
           python src/models/experiment.py
+       - name: Retrain model
+        continue-on-error: true
+        env:
+          MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
+          MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
+        run: |
+          python src/models/train.py
+          python src/models/experiment.py
+
+
 
       # 7. Version new model with DVC
       - name: Version model artifact
