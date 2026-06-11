@@ -6,3 +6,5 @@ dvc
 joblib
 pytest
 python-dotenv
+fastapi
+uvicorn
